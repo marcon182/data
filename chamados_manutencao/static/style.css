@@ -1,0 +1,105 @@
+/* --- TEMA GERAL E FONTE --- */
+body {
+    /* Um fundo gradiente sutil para dar profundidade */
+    background-color: #485766; /* Cor de fundo principal */
+    background-image: linear-gradient(315deg, #2c3e50 0%, #46637f 74%);
+    
+    /* Usando a fonte Poppins que importamos no HTML */
+    font-family: 'Poppins', sans-serif;
+    
+    /* Cor do texto principal */
+    color: #ecf0f1;
+}
+
+/* --- ESTILO DOS CARDS --- */
+.card {
+    background-color: #34495e; /* Um cinza-azulado um pouco mais claro que o fundo */
+    border: none; /* Removemos a borda padrão */
+    border-radius: 8px; /* Bordas mais arredondadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar um efeito "flutuante" */
+    transition: all 0.3s ease; /* Transição suave para efeitos de hover */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efeito de levantar o card ao passar o mouse */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* --- CABEÇALHOS DOS CARDS (SUBSTITUINDO O AZUL E O VERDE) --- */
+.card-header.bg-primary {
+    /* Nosso novo "primário" será um tom de laranja */
+    background-color: #e67e22 !important;
+    border-bottom: 1px solid #d35400;
+}
+
+.card-header.bg-success {
+    /* Nosso novo "sucesso" será um tom de ciano/turquesa */
+    background-color: #117a40 !important;
+    border-bottom: 1px solid #117a40;
+}
+
+/* --- BOTÕES (SUBSTITUINDO O AZUL E O VERDE) --- */
+.btn-primary {
+    background-color: #e67e22;
+    border-color: #e67e22;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #d35400; /* Cor mais escura para o hover */
+    border-color: #d35400;
+}
+
+.btn-success {
+    background-color: #117a40; /* Um tom mais vibrante de ciano */
+    border-color: #117a40;
+    font-weight: 600;
+}
+
+.btn-success:hover {
+    background-color: #117a40; /* Cor mais escura para o hover */
+    border-color: #117a40;
+}
+
+/* --- TABELA DE HISTÓRICO --- */
+.table {
+    --bs-table-bg: #34495e; /* Fundo das linhas da tabela */
+    --bs-table-striped-bg: #405a74; /* Fundo das linhas listradas */
+    --bs-table-color: #ecf0f1; /* Cor do texto da tabela */
+    --bs-table-border-color: #46637f; /* Cor das bordas */
+}
+
+.table-dark {
+    --bs-table-bg: #2c3e50; /* Fundo do cabeçalho da tabela */
+    --bs-table-color: #ffffff; /* Texto do cabeçalho da tabela */
+}
+
+/* --- EMBLEMAS DE STATUS (BADGES) --- */
+.badge.bg-warning {
+    background-color: #f1c40f !important; /* Amarelo mais vibrante */
+    color: #2c3e50 !important; /* Texto escuro para melhor contraste */
+}
+
+.badge.bg-success {
+    background-color: #1abc9c !important;
+    color: #ffffff !important;
+}
+
+/* --- CAMPOS DE FORMULÁRIO --- */
+.form-control, .form-select {
+    background-color: #46637f;
+    color: #ecf0f1;
+    border: 1px solid #5d7c9a;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #46637f;
+    color: #ecf0f1;
+    border-color: #e67e22; /* Borda laranja ao focar */
+    box-shadow: 0 0 0 0.25rem rgba(230, 126, 34, 0.25); /* Sombra laranja */
+}
+
+/* Para o placeholder (texto cinza dentro do input) */
+.form-control::placeholder {
+    color: #a4b0be;
+}

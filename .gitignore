@@ -1,0 +1,12 @@
+# Arquivos temporários do Python
+__pycache__/
+*.pyc
+
+# Banco de dados (nunca envie o banco para o GitHub)
+*.db
+*.db-journal
+
+# Arquivos de ambientes virtuais
+venv/
+env/
+.env
